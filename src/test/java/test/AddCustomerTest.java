@@ -36,6 +36,7 @@ public class AddCustomerTest {
 		addCustomerPage.insertFullName("Selenium Sept2021");
 		addCustomerPage.insertCompany("Techfios");
 		addCustomerPage.insertEmail("abc@techfios.com");
+		
 
 	}
 

@@ -1,0 +1,5 @@
+page\DashBoardPage.class
+page\AddCustomerPage.class
+util\BrowserFactory.class
+page\BasePage.class
+page\LoginPage.class

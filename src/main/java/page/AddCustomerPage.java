@@ -50,8 +50,9 @@ public class AddCustomerPage extends BasePage {
 	WebElement SEARCH_BAR_LIST_CUSTOMER_ELEMENT;
 	
 	
-	public void verifyAddContactPage() {
-		waitForElement(driver, 30, ADD_CONTACT_HEADER_ELEMENT);
+	public void verifyAddContactPage() throws InterruptedException {
+		Thread.sleep(3000);
+		//waitForElement(driver, 10, ADD_CONTACT_HEADER_ELEMENT);
 		Assert.assertEquals(ADD_CONTACT_HEADER_ELEMENT.getText(), "Add Contact", "Wrong Page!!!");
 	}
 	

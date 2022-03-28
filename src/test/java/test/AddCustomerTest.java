@@ -17,7 +17,7 @@ public class AddCustomerTest {
 	String password = "abc123";
 	
 	@Test
-	public void validUserShouldBeAbleToCreateCustomer() {
+	public void validUserShouldBeAbleToCreateCustomer() throws InterruptedException {
 
 		driver = BrowserFactory.init();
 

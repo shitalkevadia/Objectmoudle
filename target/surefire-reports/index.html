@@ -142,31 +142,15 @@
                   <a name="validUserShouldBeAbleToCreateCustomer">
                   </a> <!-- validUserShouldBeAbleToCreateCustomer -->
                   <span class="method-name">validUserShouldBeAbleToCreateCustomer</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=99.0.4844.51)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-KTKLAPV&apos;, ip: &apos;192.168.0.77&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_202&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: C:\Users\Nerdy\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49215}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 43b10aa9ac679849b3ecf6cf7c9d0f75
-*** Element info: {Using=xpath, value=//*[@id=&quot;username&quot;]}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy5.sendKeys(Unknown Source)
-	at page.LoginPage.insertUserName(LoginPage.java:24)
-	at test.AddCustomerTest.validUserShouldBeAbleToCreateCustomer(AddCustomerTest.java:25)
-... Removed 39 stack frames
+                  <div class="stack-trace">java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at page.BasePage.waitForElement(BasePage.java:15)
+	at page.AddCustomerPage.verifyAddContactPage(AddCustomerPage.java:54)
+	at test.AddCustomerTest.validUserShouldBeAbleToCreateCustomer(AddCustomerTest.java:35)
+... Removed 35 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -241,18 +225,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validUserShouldBeAbleToLogin')
-data.setCell(0, 2, 'test.LoginTest')
-data.setCell(0, 3, 4880);
+data.setCell(0, 1, 'validUserShouldBeAbleToCreateCustomer')
+data.setCell(0, 2, 'test.AddCustomerTest')
+data.setCell(0, 3, 8623);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validUserShouldBeAbleToCreateCustomer')
-data.setCell(1, 2, 'test.AddCustomerTest')
-data.setCell(1, 3, 3837);
+data.setCell(1, 1, 'validUserShouldBeAbleToLogin')
+data.setCell(1, 2, 'test.LoginTest')
+data.setCell(1, 3, 7289);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Command_line_suite">
               </div> <!-- times-div-Command_line_suite -->
             </div> <!-- times-div -->
@@ -290,7 +274,7 @@ return data;
               <div class="chronological-class-name">test.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">validUserShouldBeAbleToLogin</span>
-                <span class="method-start">3846 ms</span>
+                <span class="method-start">8630 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
